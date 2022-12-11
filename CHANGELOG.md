@@ -1,4 +1,4 @@
-## [Unreleased]
+## [1.0.3] - 2022-12-11
 ### Added
 - New patches: markup-in-status-messages, show-status-on-selected-monitor (benc)
 ### Fixed
