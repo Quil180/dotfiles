@@ -71,6 +71,6 @@ echo "Start update"
 echo "-----------------------------------------------------"
 echo ""
 
-paru
+upd sp
 
 notify-send "Update complete"
