@@ -1,0 +1,3 @@
+[submodule "suckless/dwl"]
+	path = suckless/dwl
+	url = git@github.com:Quil180/dwl.git
