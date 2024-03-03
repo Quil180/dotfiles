@@ -16,3 +16,6 @@
 [submodule "suckless/dwlb"]
 	path = suckless/dwlb
 	url = git@github.com:Quil180/dwlb.git
+[submodule "suckless/someblocks"]
+	path = suckless/someblocks
+	url = git@github.com:Quil180/someblocks.git
