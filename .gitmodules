@@ -13,3 +13,6 @@
 [submodule "suckless/slstatus"]
 	path = suckless/slstatus
 	url = git@github.com:Quil180/slstatus.git
+[submodule "suckless/dwlb"]
+	path = suckless/dwlb
+	url = git@github.com:Quil180/dwlb.git
