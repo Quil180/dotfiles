@@ -7,3 +7,6 @@
 [submodule "suckless/st"]
 	path = suckless/st
 	url = git@github.com:Quil180/st.git
+[submodule "suckless/suckless/slstatus"]
+	path = suckless/suckless/slstatus
+	url = git@github.com:Quil180/slstatus.git
