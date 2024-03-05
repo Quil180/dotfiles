@@ -1,8 +1,11 @@
+# quick settings
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
 # General Quick Alias to help navigate the terminal and editing things.
 alias edith='nvim ~/.config/hypr/hyprland.conf'
 alias edithb='nvim ~/.config/hypr/modules/binds.conf'
 alias updb='source ~/.bashrc'
-alias editb='nvim ~/.bashrc'
 alias updg='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias editg='sudo nvim /etc/default/grub'
 alias shutdown='sudo shutdown'
@@ -10,6 +13,17 @@ alias reboot='sudo reboot'
 alias nf='neofetch'
 alias clean='paru -c'
 alias cd='z'
+
+# edit .bashrc then update it
+function editb () {
+  nvim ~/.bashrc
+  source ~/.bashrc
+}
+# same thing as above but with keybindings
+function editbb () {
+  nvim ~/dotfiles/dotfiles/.keybinds
+  source ~/.bashrc
+}
 
 # function to install programs, either via Pacman or Paru/AUR.
 function install () {
