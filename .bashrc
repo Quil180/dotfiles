@@ -29,7 +29,7 @@ function install () {
   if [[ "$1" == "s" ]]
   then
     j=""
-    for i in ${*:2};
+    for i in ${*:2}
     do 
       j+=$i
       j+=" "
@@ -38,7 +38,7 @@ function install () {
   elif [[ "$1" == "p" ]]
   then
     j=" "
-    for i in ${*:2};
+    for i in ${*:2}
     do
       j+=$i
       j+=" "
@@ -81,9 +81,9 @@ function upd () {
 # A compile and run C file alias.
 function runc () {
   temp=""
-  for arg in "$@";
+  for arg in "$@"
   do
-    temp+="$arg.c ";
+    temp+="$arg.c "
   done
   gcc $temp -o $1
   ./$1
@@ -100,6 +100,18 @@ function runcpp () {
   g++ $temp -o $1
   ./$1
   rm $1
+}
+
+function push () {
+  j=""
+  for i in ${*:2}
+  do 
+    j+=$i
+    j+=" "
+  done
+  git add .
+  git commit -m j
+  git push origin HEAD:main
 }
 
 # Import colorscheme from 'wal' asynchronously
