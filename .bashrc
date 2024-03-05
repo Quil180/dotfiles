@@ -28,10 +28,22 @@ alias cd='z'
 function install () {
   if [[ "$1" == "s" ]]
   then
-    sudo pacman -S $2
+    j=""
+    for i in ${*:2};
+    do 
+      j+=$i
+      j+=" "
+    done
+    sudo pacman -S $j
   elif [[ "$1" == "p" ]]
   then
-    paru -S $2
+    j=" "
+    for i in ${*:2};
+    do
+      j+=$i
+      j+=" "
+    done
+    paru -S $j
   else
     echo "Please select whether to install via Pacman (s) or Paru/AUR (p)."
     echo "Example: 'install s (package-name)' for Pacman."
@@ -40,7 +52,7 @@ function install () {
 
 # a function to remove packages.
 function remove () {
-	paru -R $1
+	paru -R $@
 }
 
 # An alias to help change the background easier and simplify code elsewhere in other configs (mainly the hyprland config).
@@ -68,20 +80,24 @@ function upd () {
 
 # A compile and run C file alias.
 function runc () {
-  gcc $(runmc $@) -o $1
+  temp=""
+  for arg in "$@";
+  do
+    temp+="$arg.c ";
+  done
+  gcc $temp -o $1
   ./$1
   rm $1
-}
-# temp function to help with runc
-function runmc () {
-  temp=""
-  for arg in "$@"; do temp+="$arg.c "; done
-  echo $temp
 }
 
 # A compile and run a c++ file alias.
 function runcpp () {
-  g++ $1.cpp -o $1
+  temp=""
+  for arg in "$@";
+  do
+    temp+="$arg.cpp ";
+  done
+  g++ $temp -o $1
   ./$1
   rm $1
 }
