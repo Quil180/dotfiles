@@ -68,12 +68,22 @@ function upd () {
 
 # A compile and run C file alias.
 function runc () {
-  gcc $1.c -o $1 && ./$1 && rm $1
+  gcc $(runmc $@) -o $1
+  ./$1
+  rm $1
+}
+# temp function to help with runc
+function runmc () {
+  temp=""
+  for arg in "$@"; do temp+="$arg.c "; done
+  echo $temp
 }
 
 # A compile and run a c++ file alias.
 function runcpp () {
-  g++ $1.cpp -o $1 && ./$1
+  g++ $1.cpp -o $1
+  ./$1
+  rm $1
 }
 
 # Import colorscheme from 'wal' asynchronously
