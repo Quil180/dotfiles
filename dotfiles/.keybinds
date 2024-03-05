@@ -11,7 +11,7 @@ alias nf='neofetch'
 alias clean='paru -c'
 alias cd='z'
 
-# a function to install programs, either via Pacman or Paru/AUR.
+# function to install programs, either via Pacman or Paru/AUR.
 function install () {
   if [[ "$1" == "s" ]]
   then
@@ -37,17 +37,17 @@ function install () {
   fi
 }
 
-# a function to remove packages.
+# function to remove packages.
 function remove () {
 	paru -R $@
 }
 
-# An alias to help change the background easier and simplify code elsewhere in other configs (mainly the hyprland config).
+# change the background easier and simplify code elsewhere in other configs (mainly the hyprland config).
 function bg () {
 	swww img Pictures/bg/bg$1.jpg | wal -i Pictures/wallpaper/bg$1.jpg && ./.config/waybar/launch.sh
 }
 
-# An alias to update the system either via Pacman (only system software) or through Paru/AUR (other software).
+# update the system either via Pacman (only system software) or through Paru/AUR (other software).
 function upd () {
 	if [[ "$1" == "s" ]]
 	then
@@ -65,7 +65,7 @@ function upd () {
 	fi
 }
 
-# A compile and run C file alias.
+# compile and run C file alias.
 function runc () {
   temp=""
   for arg in "$@"
@@ -77,7 +77,7 @@ function runc () {
   rm $1
 }
 
-# A compile and run a c++ file alias.
+# compile and run a c++ file alias.
 function runcpp () {
   temp=""
   for arg in "$@";
@@ -89,14 +89,9 @@ function runcpp () {
   rm $1
 }
 
+# pushing a git repository
 function push () {
-  j=""
-  for i in ${*:2}
-  do 
-    j+=$i
-    j+=" "
-  done
   git add .
   git commit .
-  git push origin HEAD:main
+  git push origin HEAD:$1
 }
