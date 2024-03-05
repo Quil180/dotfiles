@@ -110,7 +110,7 @@ function push () {
     j+=" "
   done
   git add .
-  git commit -m j
+  git commit .
   git push origin HEAD:main
 }
 
