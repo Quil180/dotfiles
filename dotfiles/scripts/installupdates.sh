@@ -71,6 +71,6 @@ echo "Start update"
 echo "-----------------------------------------------------"
 echo ""
 
-upd sp
+sudo pacman -Syu && paru -Syu
 
 notify-send "Update complete"

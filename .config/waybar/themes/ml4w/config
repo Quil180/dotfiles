@@ -32,9 +32,10 @@
     // Modules Left
     "modules-left": [
         "wlr/taskbar",
-	"tray",
+	      "tray",
         "custom/waybarthemes",
-	"hyprland/window"
+	      "hyprland/window",
+        "sway/scratchpad"
     ],
 
     // Modules Center
@@ -51,7 +52,6 @@
         "network",
         "group/hardware",
         "custom/cliphist",
-        "custom/exit",
         "clock"
     ]
 }
