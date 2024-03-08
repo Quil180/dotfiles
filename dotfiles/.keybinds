@@ -13,6 +13,7 @@ alias reboot='sudo reboot'
 alias nf='neofetch'
 alias clean='paru -c'
 alias cd='z'
+alias cat='bat --paging=never'
 
 # edit .bashrc then update it
 function editb () {
