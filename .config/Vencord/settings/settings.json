@@ -190,7 +190,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 2.218423076923077,
+            "zoom": 2.6245641025641024,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -216,7 +216,9 @@
             "enabled": false
         },
         "MemberCount": {
-            "enabled": true
+            "enabled": true,
+            "memberList": true,
+            "toolTip": true
         },
         "MessageClickActions": {
             "enabled": true,
@@ -528,6 +530,12 @@
         },
         "ReviewDB": {
             "enabled": false
+        },
+        "BetterRoleContext": {
+            "enabled": false
+        },
+        "ResurrectHome": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -540,6 +548,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1709874461564
+        "settingsSyncVersion": 1709935166255
     }
 }
