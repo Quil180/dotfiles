@@ -1,21 +1,3 @@
-[submodule "suckless/dwl"]
-	path = suckless/dwl
-	url = git@github.com:Quil180/dwl.git
-[submodule "suckless/somebar"]
-	path = suckless/somebar
-	url = git@github.com:Quil180/somebar.git
-[submodule "suckless/st"]
-	path = suckless/st
-	url = git@github.com:Quil180/st.git
-[submodule "suckless/suckless/slstatus"]
-	path = suckless/suckless/slstatus
-	url = git@github.com:Quil180/slstatus.git
-[submodule "suckless/slstatus"]
-	path = suckless/slstatus
-	url = git@github.com:Quil180/slstatus.git
-[submodule "suckless/dwlb"]
-	path = suckless/dwlb
-	url = git@github.com:Quil180/dwlb.git
-[submodule "suckless/someblocks"]
-	path = suckless/someblocks
-	url = git@github.com:Quil180/someblocks.git
+[submodule "dotfiles/ble.sh"]
+	path = dotfiles/ble.sh
+	url = https://github.com/akinomyoga/ble.sh.git
