@@ -18,3 +18,5 @@ PS1='[\u@\h \W]\$ '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+source ~/.local/share/blesh/ble.sh
+source ~/.local/share/blesh/ble.sh
