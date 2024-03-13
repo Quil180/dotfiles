@@ -8,7 +8,6 @@ Myself, of course.
 Of course, it's git, stow, hyprland, kitty, waybar!!!
 aka do:
 ```sudo pacman -S git kitty nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland stow waybar discord ``` 
-(this is assuming you are using Arch Linux)
 
 # But how do I actually use the bloody thing??
 Simple!!
