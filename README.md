@@ -7,7 +7,7 @@ Myself, of course.
 # But What are the Dependancies??
 Of course, it's git, stow, hyprland, kitty, waybar!!!
 aka do:
-```sudo pacman -S git kitty nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland stow waybar discord ``` 
+```sudo pacman -S git kitty nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland stow waybar discord``` 
 
 # But how do I actually use the bloody thing??
 Simple!!
