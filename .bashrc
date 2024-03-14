@@ -18,5 +18,6 @@ PS1='[\u@\h \W]\$ '
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# enabling ble.sh (autocomplete)
 source ~/.local/share/blesh/ble.sh
 source ~/.local/share/blesh/ble.sh
