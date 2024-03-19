@@ -13,6 +13,8 @@ alias reboot='sudo reboot'
 alias nf='neofetch'
 alias clean='paru -c'
 alias cd='z'
+alias looking-glass-client='env -u WAYLAND_DISPLAY looking-glass-client'
+alias minecraft-server='ssh ubuntu@129.213.199.135 -i ~/.ssh/ssh-key-2024-03-18.key'
 
 # edit .bashrc then update it
 function editb () {
