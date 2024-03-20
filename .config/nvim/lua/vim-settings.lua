@@ -6,3 +6,9 @@ vim.cmd("set shiftwidth=2")
 -- setting up my leader to be space
 vim.g.mapleader = " "
 
+-- nvim specific keybinds
+vim.keymap.set('n', ';', ":", {})
+vim.keymap.set('n', '<leader>s', ":w<CR>", {})
+vim.keymap.set('n', '<leader>e', ":wqa<CR>", {})
+vim.keymap.set('n', '<leader>q', ":q<CR>", {})
+vim.keymap.set('n', '<leader>l', ":Lazy<CR>", {})
