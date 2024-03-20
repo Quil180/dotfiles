@@ -24,7 +24,7 @@ vim.opt.rtp:prepend(lazypath)
 plugins = {
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 }, -- installing the catppuccin theme
   { "nvim-telescope/telescope.nvim", tag = '0.1.5', dependencies = { 'nvim-lua/plenary.nvim' } }, -- lets you search for files and text in files
-  {}, -- lets you get highlighting for languages of my choosing
+  { "nvim-treesitter/nvim-treesitter", build=":TSUpdate" }, -- lets you get highlighting for languages of my choosing
 }
 
 opts = {
@@ -39,6 +39,15 @@ local builtin = require("telescope.builtin")
 -- mapping the keybinds for the following
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {}) -- finding files
 vim.keymap.set('n', '<leader>ft', builtin.live_grep, {}) -- searching for text
+
+-- making treesitter work
+local config = require("nvim-treesitter.configs")
+config.setup({
+  ensure_installed = { "lua", "c", "cpp", "java", "rust" }, -- ensuring the languages that I use are installed.
+  -- enabling some other features of treesitter
+  highlight = { enable = true },
+  indent = { enable = true },
+})
 
 -- setting the catppuccin theme as default
 require("catppuccin").setup()
