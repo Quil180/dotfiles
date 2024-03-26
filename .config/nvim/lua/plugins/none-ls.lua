@@ -5,9 +5,14 @@ return {
 
     null_ls.setup({
       source = {
-        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.stylua.with({
+          filetypes = { "lua", "luau" }
+        }),
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
+        null_ls.builtins.formatting.clang_format.with({
+          filetypes = { "c", "cpp", "cs" },
+        }),
       },
     })
 

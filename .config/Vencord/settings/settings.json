@@ -59,7 +59,9 @@
             "enabled": false
         },
         "AlwaysTrust": {
-            "enabled": true
+            "enabled": true,
+            "domain": true,
+            "file": true
         },
         "AnonymiseFileNames": {
             "enabled": false
@@ -190,7 +192,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 2.218423076923077,
+            "zoom": 1.4061410256410256,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -236,7 +238,9 @@
             "ignoreSelf": false,
             "ignoreUsers": "",
             "ignoreChannels": "",
-            "ignoreGuilds": ""
+            "ignoreGuilds": "",
+            "logEdits": true,
+            "logDeletes": true
         },
         "MessageTags": {
             "enabled": false
@@ -545,6 +549,12 @@
         },
         "FriendsSince": {
             "enabled": false
+        },
+        "BetterSettings": {
+            "enabled": false
+        },
+        "OverrideForumDefaults": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -557,6 +567,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1711170562589
+        "settingsSyncVersion": 1711341976474
     }
 }
