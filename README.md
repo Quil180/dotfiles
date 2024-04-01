@@ -12,7 +12,7 @@ aka do:
 # But how do I actually use the bloody thing??
 Simple!!
 
-1. Git clone the repo into you ~ folder.
+1. Git clone the repo into your ~ folder.
 2. CD into ```dotfiles/```
 3. Use the command ```stow .``` in that folder.
 4. Enjoy!
