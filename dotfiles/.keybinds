@@ -88,7 +88,7 @@ function runc () {
   do
     temp+="$arg.c "
   done
-  gcc $temp -o $1
+  gcc $temp -o $1 -g -std=c2x
   ./$1
   rm $1
 }
@@ -100,7 +100,7 @@ function runcpp () {
   do
     temp+="$arg.cpp ";
   done
-  g++ $temp -o $1
+  g++ $temp -o $1 -g
   ./$1
   rm $1
 }
