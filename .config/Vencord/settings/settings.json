@@ -234,7 +234,7 @@
         "MessageLogger": {
             "enabled": true,
             "deleteStyle": "text",
-            "ignoreBots": false,
+            "ignoreBots": true,
             "ignoreSelf": false,
             "ignoreUsers": "",
             "ignoreChannels": "",
@@ -567,6 +567,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1712007795007
+        "settingsSyncVersion": 1712548801360
     }
 }
