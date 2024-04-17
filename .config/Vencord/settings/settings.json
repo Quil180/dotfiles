@@ -192,7 +192,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 1.9253846153846155,
+            "zoom": 1.4626923076923077,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -555,6 +555,9 @@
         },
         "OverrideForumDefaults": {
             "enabled": false
+        },
+        "UnlockedAvatarZoom": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -567,6 +570,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1712548801360
+        "settingsSyncVersion": 1713214620731
     }
 }
