@@ -5,7 +5,8 @@
     "useQuickCss": true,
     "themeLinks": [],
     "enabledThemes": [
-        "Dark Matter.theme.css"
+        "Dark Matter.theme.css",
+        "Glass Wave.theme.css"
     ],
     "enableReactDevtools": false,
     "frameless": false,
@@ -192,7 +193,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 1.4626923076923077,
+            "zoom": 1,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -558,6 +559,13 @@
         },
         "UnlockedAvatarZoom": {
             "enabled": false
+        },
+        "WebContextMenus": {
+            "enabled": true,
+            "addBack": true
+        },
+        "WebKeybinds": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -567,9 +575,9 @@
         "logLimit": 50
     },
     "cloud": {
-        "authenticated": true,
+        "authenticated": false,
         "url": "https://api.vencord.dev/",
-        "settingsSync": true,
-        "settingsSyncVersion": 1713214620731
+        "settingsSync": false,
+        "settingsSyncVersion": 1713849169091
     }
 }
