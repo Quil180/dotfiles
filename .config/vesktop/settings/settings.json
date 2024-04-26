@@ -193,7 +193,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 1,
+            "zoom": 1.4626923076923077,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -250,7 +250,7 @@
             "enabled": false
         },
         "MoreKaomoji": {
-            "enabled": false
+            "enabled": true
         },
         "MoreUserTags": {
             "enabled": false
@@ -268,7 +268,7 @@
             "enabled": false
         },
         "NoF1": {
-            "enabled": false
+            "enabled": true
         },
         "NoMosaic": {
             "enabled": false
@@ -537,7 +537,7 @@
             "enabled": false
         },
         "FixYoutubeEmbeds": {
-            "enabled": false
+            "enabled": true
         },
         "ReviewDB": {
             "enabled": false
@@ -578,6 +578,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1713849169091
+        "settingsSyncVersion": 1714098332612
     }
 }
