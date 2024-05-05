@@ -24,7 +24,7 @@
     "layer": "top",
     "margin-left": 0,
     "margin-right": 0,    
-    "spacing": 0,
+    "spacing": 1,
 
     // Load Modules
     "include": ["~/.config/waybar/modules.json"],
@@ -33,9 +33,7 @@
     "modules-left": [
         "wlr/taskbar",
 	      "tray",
-        "custom/waybarthemes",
 	      "hyprland/window",
-        "sway/scratchpad"
     ],
 
     // Modules Center
@@ -47,11 +45,9 @@
     "modules-right": [
         "custom/updates",
         "pulseaudio",
-        "bluetooth",
         "battery", 
         "network",
         "group/hardware",
-        "custom/cliphist",
         "clock"
     ]
 }

@@ -33,13 +33,13 @@
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
-           "kitty"
+           "foot"
         ],
         "app_ids-mapping": {
             "firefoxdeveloperedition": "firefox-developer-edition"
         },
         "rewrite": {
-            "Firefox Web Browser": "Firefox",
+            "Brave": "Brave",
             "Foot Server": "Terminal"
         }
     },
