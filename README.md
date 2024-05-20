@@ -8,7 +8,7 @@ Myself, of course.
 Of course, it's git, stow, hyprland, kitty, waybar!!!
 aka do:
 ```
-sudo pacman -S git foot nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland stow waybar vesktop-bin
+sudo pacman -S git foot nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland-git stow waybar vesktop-bin
 ```
 
 # What if I dont have paru?
@@ -29,9 +29,28 @@ cd
 git clone --recurse-submodules https://github.com/Quil180/dotfiles.git
 ```
 
-2. ```cd dotfiles/```
+2. 
+```
+cd dotfiles/
+```
 
-3. ```stow .```
+3. 
+```
+stow .
+```
 
 4. Enjoy!
 
+# Full command alltogether (not tested yet)
+```
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+sudo pacman -S git foot nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland-git stow waybar vesktop-bin
+cd
+git clone --recurse-submodules https://github.com/Quil180/dotfiles.git
+cd dotfiles/
+stow .
+echo Quil's Dotfiles have been succesfully installed!
+```
