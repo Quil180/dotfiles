@@ -1,2 +1,2 @@
 #!/bin/bash
-theme_name="Waybar Starter"
+theme_name="myConfig"

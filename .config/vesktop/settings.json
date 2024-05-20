@@ -3,5 +3,10 @@
     "discordBranch": "stable",
     "arRPC": "on",
     "splashColor": "rgb(220, 221, 222)",
-    "splashBackground": "rgb(49, 51, 56)"
+    "splashBackground": "rgb(49, 51, 56)",
+    "customTitleBar": false,
+    "staticTitle": false,
+    "disableSmoothScroll": true,
+    "splashTheming": false,
+    "enableMenu": false
 }
