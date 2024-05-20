@@ -24,7 +24,7 @@ makepkg -si
 Simple!!
 
 1. 
-'``
+```
 cd
 git clone --recurse-submodules https://github.com/Quil180/dotfiles.git
 ```
