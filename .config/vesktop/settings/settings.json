@@ -195,7 +195,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 1.9253846153846155,
+            "zoom": 1.4626923076923077,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -320,9 +320,6 @@
             "steam": true,
             "epic": true,
             "tidal": true
-        },
-        "Party mode 🎉": {
-            "enabled": false
         },
         "PermissionFreeWill": {
             "enabled": true,
@@ -615,6 +612,21 @@
         },
         "WebScreenShareFixes": {
             "enabled": true
+        },
+        "PartyMode": {
+            "enabled": false
+        },
+        "AutomodContext": {
+            "enabled": false
+        },
+        "CustomIdle": {
+            "enabled": false
+        },
+        "NoDefaultHangStatus": {
+            "enabled": false
+        },
+        "ReplaceGoogleSearch": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -627,6 +639,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1716423156336
+        "settingsSyncVersion": 1717113567863
     }
 }
