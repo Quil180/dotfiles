@@ -1,6 +1,6 @@
 {
     "notifyAboutUpdates": true,
-    "autoUpdate": false,
+    "autoUpdate": true,
     "autoUpdateNotification": true,
     "useQuickCss": true,
     "themeLinks": [],
@@ -195,7 +195,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 1.4626923076923077,
+            "zoom": 3.3134615384615387,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -390,9 +390,6 @@
             "enabled": false
         },
         "ServerListIndicators": {
-            "enabled": false
-        },
-        "ServerProfile": {
             "enabled": false
         },
         "ShikiCodeblocks": {
@@ -627,6 +624,33 @@
         },
         "ReplaceGoogleSearch": {
             "enabled": false
+        },
+        "MessageUpdaterAPI": {
+            "enabled": true
+        },
+        "DontRoundMyTimestamps": {
+            "enabled": false
+        },
+        "MaskedLinkPaste": {
+            "enabled": false
+        },
+        "Summaries": {
+            "enabled": false
+        },
+        "WatchTogetherAdblock": {
+            "enabled": false
+        },
+        "ServerInfo": {
+            "enabled": false
+        },
+        "AppleMusicRichPresence": {
+            "enabled": false
+        },
+        "CopyEmojiMarkdown": {
+            "enabled": false
+        },
+        "NoOnboardingDelay": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -639,6 +663,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1717113567863
+        "settingsSyncVersion": 1718147777156
     }
 }

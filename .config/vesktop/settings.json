@@ -8,5 +8,9 @@
     "staticTitle": false,
     "disableSmoothScroll": true,
     "splashTheming": false,
-    "enableMenu": false
+    "enableMenu": false,
+    "spellCheckLanguages": [
+        "en-US",
+        "en"
+    ]
 }
