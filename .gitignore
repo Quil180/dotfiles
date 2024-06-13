@@ -1,3 +1,9 @@
 compile_commands.json
 build
 .cache
+ble.sh
+scripts
+.keybinds
+.wal
+.zoxide
+chrometheme.sh
