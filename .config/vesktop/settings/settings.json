@@ -195,7 +195,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 3.3134615384615387,
+            "zoom": 3.7761538461538464,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -229,7 +229,8 @@
             "enabled": true,
             "requireModifier": false,
             "enableDoubleClickToReply": true,
-            "enableDoubleClickToEdit": true
+            "enableDoubleClickToEdit": true,
+            "enableDeleteOnClick": true
         },
         "MessageLinkEmbeds": {
             "enabled": false
@@ -663,6 +664,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1718147777156
+        "settingsSyncVersion": 1718258919720
     }
 }
