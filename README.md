@@ -52,5 +52,6 @@ cd
 git clone --recurse-submodules https://github.com/Quil180/dotfiles.git
 cd dotfiles/
 stow .
+cd
 echo Quil's Dotfiles have been succesfully installed!
 ```
