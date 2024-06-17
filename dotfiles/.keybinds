@@ -8,8 +8,8 @@ alias edithb='nvim ~/.config/hypr/modules/binds.conf'
 alias updb='source ~/.bashrc'
 alias updg='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias editg='sudo nvim /etc/default/grub'
-alias shutdown='sudo shutdown'
-alias reboot='sudo reboot'
+alias shutdown='sudo shutdown now'
+alias reboot='sudo reboot now'
 alias nf='fastfetch --localip-show-ipv4 0'
 alias clean='paru -c'
 alias cd='z'
@@ -17,15 +17,6 @@ alias looking-glass-client='env -u WAYLAND_DISPLAY looking-glass-client'
 alias minecraft-server='ssh ubuntu@129.213.123.195 -i ~/.ssh/ssh-key-2024-04-06.key'
 alias hybrid='supergfxctl -m Hybrid && asusctl bios -O true && asusctl profile -P Performance && loginctl terminate-user $USER'
 alias integrated='supergfxctl -m Integrated && asusctl bios -O false && asusctl profile -P Quiet && loginctl terminate-user $USER' 
-
-function sayori () {
-  if [[ "$1" == "make-sandwich" ]]
-  then
-    echo "Sayori made a sandwich"
-  else
-    echo "What do you want Sayori to do? (make-sandwich)"
-  fi
-}
 
 # edit .bashrc then update it
 function editb () {

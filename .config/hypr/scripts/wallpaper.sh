@@ -54,11 +54,6 @@ cp $wallpaper ~/.cache/current_wallpaper.jpg
 newwall=$(echo $wallpaper | sed "s|$HOME/Picture/wallpaper/||g")
 
 # ----------------------------------------------------- 
-# Reload waybar with new colors
-# -----------------------------------------------------
-~/.config/waybar/launch.sh
-
-# ----------------------------------------------------- 
 # Set the new wallpaper
 # -----------------------------------------------------
 transition_type="wipe"
@@ -69,10 +64,14 @@ swww img $wallpaper \
     --transition-bezier .43,1.19,1,.4 \
     --transition-fps=60 \
     --transition-type=$transition_type \
-    --transition-duration=0.7 \
-    --transition-pos "$( hyprctl cursorpos )"
+    --transition-duration=0.7
 
 ~/dotfiles/chrometheme.sh
+
+# ----------------------------------------------------- 
+# Reload waybar with new colors
+# -----------------------------------------------------
+~/.config/waybar/waybar.sh
 
 # ----------------------------------------------------- 
 # Send notification
