@@ -251,7 +251,7 @@ button:hover {
 }
 
 #wireplumber.muted {
-    background-color: @blue;
+    background-color: @color2;
 }
 
 #tray > .passive {
@@ -263,7 +263,7 @@ button:hover {
 }
 
 #mpris.playing {
-    background-color: @yellow;
+    background-color: @color2;
     color: @fglight;
 }
 

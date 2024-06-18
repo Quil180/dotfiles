@@ -3,15 +3,12 @@
     "output": ["DP-1", "eDP-2"],
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 24, // Waybar height (to be removed for auto height)
+    //"height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "cava",
-        "hyprland/mode",
-        "hyprland/scratchpad"
     ],
     "modules-center": [
         "hyprland/window"
@@ -19,12 +16,14 @@
     "modules-right": [
         "mpris",
         "idle_inhibitor",
-        "load",
-	"wireplumber",
+        "cpu",
+        "memory",
+        "temperature",
+	      "wireplumber",
         "backlight",
         "clock",
         "battery",
-        "tray"
+        "tray",
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -68,7 +67,7 @@
 	}
     },
     "mpris": {
- 	"format": " {status_icon} {dynamic}",
+ 	"format": "{status_icon} {dynamic}",
         "interval": 1,
         "dynamic-len": 40,
 	"status-icons": {
@@ -77,7 +76,7 @@
 		"stopped": ""
 	},
 	"dynamic-order": ["title", "artist"],
-	"ignored-players": ["firefox"]
+	"ignored-players": ["brave"]
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -101,19 +100,20 @@
         "spacing": 10
     },
     "load": {
-        "format": " {}"
+        "format": "{}"
     },
     "clock": {
         // "timezone": "America/New_York",
+        "format": "{:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": "{usage}%  ",
+        "tooltip": true
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}%  "
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -139,8 +139,8 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format-good": "", // An empty format will hide the module
+        "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     "wireplumber": {
@@ -150,15 +150,15 @@
         "format-bluetooth-muted": " {icon}",
         "format-muted": "",
         "format-icons": {
-            "headphone": "",
+            "headphone": "",
             "hands-free": "",
             "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["", "", ""]
         },
-        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     }
 },{
     "output": ["HDMI-A-1"],
