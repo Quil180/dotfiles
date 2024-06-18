@@ -264,7 +264,7 @@ button:hover {
 
 #mpris.playing {
     background-color: @color2;
-    color: @fglight;
+    color: @foreground;
 }
 
 #tray menu {
