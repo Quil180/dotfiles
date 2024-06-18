@@ -177,7 +177,7 @@ button:hover {
 }
 
 #workspaces button:hover {
-    color: @yellow;
+    color: @color2;
 }
 
 #workspaces button.focused {
@@ -274,4 +274,16 @@ button:hover {
 #scratchpad.empty {
     background: transparent;
     padding: 0;
+}
+
+#cpu {
+    background-color: @tooltipbg;
+}
+
+#memory {
+    background-color: @tooltipbg;
+}
+
+#temperature {
+    background-color: @tooltipbg;
 }
