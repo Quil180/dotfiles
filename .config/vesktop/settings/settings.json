@@ -5,8 +5,8 @@
     "useQuickCss": true,
     "themeLinks": [],
     "enabledThemes": [
-        "Dark Matter.theme.css",
-        "Glass Wave.theme.css"
+        "Glass Wave.theme.css",
+        "aobtheme.theme.css"
     ],
     "enableReactDevtools": false,
     "frameless": false,
@@ -113,7 +113,9 @@
             "enabled": true
         },
         "CrashHandler": {
-            "enabled": true
+            "enabled": true,
+            "attemptToPreventCrashes": true,
+            "attemptToNavigateToHome": false
         },
         "CustomRPC": {
             "enabled": false,
@@ -195,7 +197,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 1.8447566820062016,
+            "zoom": 1.9253846153846155,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -423,7 +425,7 @@
             "enabled": false
         },
         "SpotifyControls": {
-            "enabled": true,
+            "enabled": false,
             "hoverControls": false
         },
         "SpotifyCrack": {
@@ -653,6 +655,12 @@
         },
         "NoOnboardingDelay": {
             "enabled": false
+        },
+        "SettingsStoreAPI": {
+            "enabled": true
+        },
+        "UserSettingsAPI": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -665,6 +673,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1718740810915
+        "settingsSyncVersion": 1719086286419
     }
 }
