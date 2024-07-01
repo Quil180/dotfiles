@@ -161,7 +161,8 @@
             "enabled": true
         },
         "FavoriteGifSearch": {
-            "enabled": true
+            "enabled": true,
+            "searchOption": "hostandpath"
         },
         "FixImagesQuality": {
             "enabled": true
@@ -197,7 +198,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 296.0141025641025,
-            "zoom": 1.9253846153846155,
+            "zoom": 1,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -673,6 +674,6 @@
         "authenticated": true,
         "url": "https://api.vencord.dev/",
         "settingsSync": true,
-        "settingsSyncVersion": 1719086286419
+        "settingsSyncVersion": 1719869828344
     }
 }

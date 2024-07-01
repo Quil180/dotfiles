@@ -12,5 +12,6 @@
     "spellCheckLanguages": [
         "en-US",
         "en"
-    ]
+    ],
+    "hardwareAcceleration": true
 }
