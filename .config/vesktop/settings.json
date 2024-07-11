@@ -7,11 +7,12 @@
     "customTitleBar": false,
     "staticTitle": false,
     "disableSmoothScroll": true,
-    "splashTheming": false,
+    "splashTheming": true,
     "enableMenu": false,
     "spellCheckLanguages": [
         "en-US",
         "en"
     ],
-    "hardwareAcceleration": true
+    "hardwareAcceleration": true,
+    "openLinksWithElectron": false
 }
