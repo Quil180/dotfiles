@@ -33,13 +33,13 @@
         "disable-scroll-wraparound": true,
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "9": "",
-            "10": ""
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "9": " ",
+            "10": " "
         }
     },
     "hyprland/window": {
@@ -71,9 +71,9 @@
         "interval": 1,
         "dynamic-len": 40,
 	"status-icons": {
-		"playing": "▶",
-		"paused": "⏸",
-		"stopped": ""
+		"playing": "▶ ",
+		"paused": "⏸ ",
+		"stopped": " "
 	},
 	"dynamic-order": ["title", "artist"],
 	"ignored-players": ["brave"]
@@ -100,7 +100,7 @@
         "spacing": 10
     },
     "load": {
-        "format": "{}"
+        "format": " {} "
     },
     "clock": {
         // "timezone": "America/New_York",
@@ -109,18 +109,18 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}%  ",
+        "format": " {usage}%  ",
         "tooltip": true
     },
     "memory": {
-        "format": "{}%  "
+        "format": " {}%  "
     },
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
+        "format": " {temperatureC}°C {icon} ",
         "format-icons": ["", "", ""]
     },
     "backlight": {
