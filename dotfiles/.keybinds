@@ -86,6 +86,7 @@ function upd () {
   then
     sudo pacman -Syu -y
     paru -Syu -y
+    yay -Syu -y
 	else
     echo "Please select whether to update via Pacman (s) or Paru/AUR (p) or for Both (sp)."
     echo "Example: 'upd s' for Pacman."
