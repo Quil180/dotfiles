@@ -82,7 +82,10 @@ function upd () {
 	elif [[ "$1" == "p" ]]
 	then
 		paru -Syu -y
-  elif [[ "$1" == "sp" || "ps" ]]
+	elif [[ "$1" == "y" ]]
+	then
+		yay -Syu -y
+  elif [[ "$1" == "a" ]]
   then
     sudo pacman -Syu -y
     paru -Syu -y
