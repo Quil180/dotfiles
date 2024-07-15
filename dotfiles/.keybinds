@@ -49,8 +49,17 @@ function install () {
       j+=" "
     done
     paru -S $j
+  elif [[ "$1" == "y" ]]
+  then
+    j=" "
+    for i in ${*:2}
+    do
+      j+=$i
+      j+=" "
+    done
+    yay -S $j
   else
-    echo "Please select whether to install via Pacman (s) or Paru/AUR (p)."
+    echo "Please select whether to install via Pacman (s) or Paru (p) or Yay (y)."
     echo "Example: 'install s (package-name)' for Pacman."
   fi
 }
@@ -69,14 +78,14 @@ function bg () {
 function upd () {
 	if [[ "$1" == "s" ]]
 	then
-		sudo pacman -Syu
+		sudo pacman -Syu -y
 	elif [[ "$1" == "p" ]]
 	then
-		paru -Syu
+		paru -Syu -y
   elif [[ "$1" == "sp" || "ps" ]]
   then
-    sudo pacman -Syu
-    paru -Syu
+    sudo pacman -Syu -y
+    paru -Syu -y
 	else
     echo "Please select whether to update via Pacman (s) or Paru/AUR (p) or for Both (sp)."
     echo "Example: 'upd s' for Pacman."
