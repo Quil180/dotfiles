@@ -5,10 +5,10 @@ This is a github repository of my personal Arch Linux Hyprland setup.
 Myself, of course.
 
 # But What are the Dependancies??
-Of course, it's git, foot, nvim, zoxide, ranger, rofi, hyprland, stow, waybar, and vesktop!!!
+Of course, it's git, foot, neovim, zoxide, ranger, rofi, hyprland, stow, waybar, and vesktop!!!
 aka do:
 ```
-sudo pacman -S git foot nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland-git stow waybar vesktop-bin
+sudo pacman -S git foot neovim zoxide ranger && paru -S hyprland-git stow waybar vesktop-bin rofi-lbonn-wayland-git
 ```
 
 # What if I dont have paru already?
