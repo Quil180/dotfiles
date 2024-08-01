@@ -43,11 +43,11 @@ stow .
 
 # Full command alltogether (not tested yet, though it should work)
 ```
-sudo pacman -S --needed base-devel
+sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-sudo pacman -S git foot nvim zoxide ranger rofi-lbonn-wayland-git && paru -S hyprland-git stow waybar vesktop-bin
+sudo pacman -S foot neovim zoxide ranger  && paru -S hyprland-git stow waybar vesktop-bin rofi-lbonn-wayland-git
 cd
 git clone --recurse-submodules https://github.com/Quil180/dotfiles.git
 cd dotfiles/
