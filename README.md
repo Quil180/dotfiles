@@ -8,7 +8,7 @@ Myself, of course.
 Of course, it's git, foot, neovim, zoxide, ranger, rofi, hyprland, stow, waybar, and vesktop!!!
 aka do:
 ```
-sudo pacman -S git foot neovim zoxide ranger grim slurp && paru -S hyprland-git stow waybar vesktop-bin rofi-lbonn-wayland-git
+sudo pacman -S git foot neovim zoxide ranger grim slurp sddm && paru -S hyprland-git stow waybar vesktop-bin rofi-lbonn-wayland-git
 ```
 
 # What if I dont have paru already?
@@ -47,7 +47,7 @@ sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-sudo pacman -S foot neovim zoxide ranger grim slurp && paru -S hyprland-git stow waybar vesktop-bin rofi-lbonn-wayland-git
+sudo pacman -S foot neovim zoxide ranger grim slurp sddm && paru -S hyprland-git stow waybar vesktop-bin rofi-lbonn-wayland-git
 cd
 git clone --recurse-submodules https://github.com/Quil180/dotfiles.git
 cd dotfiles/
