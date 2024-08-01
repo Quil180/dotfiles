@@ -22,5 +22,3 @@ PS1='[\u@\h \W]\$ '
 source ~/.local/share/blesh/ble.sh
 source ~/.local/share/blesh/ble.sh
 
-# Created by `pipx` on 2024-05-06 20:10:48
-export PATH="$PATH:/home/yousef/.local/bin"
