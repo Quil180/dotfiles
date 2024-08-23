@@ -10,6 +10,7 @@ vim.g.mapleader = " "
 -- nvim specific options
 vim.opt.relativenumber = true
 vim.opt.number = true
+vim.opt.formatoptions:append("t")
 
 -- nvim specific keybinds
 vim.keymap.set('n', ';', ":", {})

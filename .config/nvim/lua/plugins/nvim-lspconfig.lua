@@ -17,6 +17,6 @@ return {
     -- keybinds
     vim.keymap.set('n', 'i', vim.lsp.buf.hover, {})
     vim.keymap.set('n', '<leader>d', vim.lsp.buf.definition, {})
-    vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
+    vim.keymap.set({ 'n', 'v' }, '<leader>cc', vim.lsp.buf.code_action, {})
   end
 }

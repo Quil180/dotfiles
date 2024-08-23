@@ -18,6 +18,7 @@ alias minecraft-server='ssh ubuntu@129.213.123.195 -i ~/.ssh/ssh-key-2024-04-06.
 alias hybrid='supergfxctl -m Hybrid && asusctl bios -O true && asusctl profile -P Performance && loginctl terminate-user $USER'
 alias integrated='supergfxctl -m Integrated && asusctl bios -O false && asusctl profile -P Quiet && loginctl terminate-user $USER'
 alias vfio='supergfxctl -m Vfio && asusctl bios -O false && asusctl profile -P Quiet && loginctl terminate-user $USER'
+alias gpu='supergfxctl -g'
 alias comfyui='cd ~/Documents/ComfyUI-Installer && ./launch.sh --lowvram --use-split-cross-attention && cd'
 
 # edit .bashrc then update it
@@ -103,11 +104,11 @@ function runc () {
   temp=""
   for arg in "$@"
   do
-    temp+="$arg.c "
+    temp+="$arg "
   done
-  gcc $temp -o $1 -g -std=c2x
-  ./$1
-  rm $1
+  gcc $temp -o temp -g -std=c2x
+  ./temp
+  rm temp
 }
 
 # compile and run a c++ file alias.
