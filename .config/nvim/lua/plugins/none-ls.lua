@@ -31,6 +31,6 @@ return {
     })
 
     -- keymaps for formatters and such
-    vim.keymap.set('n', '<leader>fc', vim.lsp.buf.format, {})
+    vim.keymap.set('n', '<leader>cf', vim.lsp.buf.format, { desc = '[C]ode [F]ormat' })
   end,
 }

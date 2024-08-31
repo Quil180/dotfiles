@@ -99,6 +99,18 @@ function upd () {
 	fi
 }
 
+# debug c files
+function debugc () {
+  temp=""
+  for arg in "$@"
+  do
+    temp+="$arg "
+  done
+  gcc $temp -g -O0
+  valgrind --track-origins=yes --leak-check=full -s --show-leak-kinds=all ./a.out
+  rm a.out
+}
+
 # compile and run C file alias.
 function runc () {
   temp=""
@@ -106,9 +118,9 @@ function runc () {
   do
     temp+="$arg "
   done
-  gcc $temp -o temp -g -std=c2x
-  ./temp
-  rm temp
+  gcc $temp
+  ./a.out
+  rm a.out
 }
 
 # compile and run a c++ file alias.
@@ -123,6 +135,15 @@ function runcpp () {
   rm $1
 }
 
+# Run Java files
+function runj () {
+  temp=""
+  for arg in "$@"
+  do
+    temp+="$arg "
+  done
+  java $temp
+}
 # pushing a git repository
 function push () {
   git add .
