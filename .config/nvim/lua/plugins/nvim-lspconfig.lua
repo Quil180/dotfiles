@@ -18,13 +18,38 @@ return {
       end,
     })
     -- setting up the typescript language server
-    lspconfig.tsserver.setup({
+    lspconfig.ts_ls.setup({
       capabilities = capabilities,
     })
     -- setting up the java typescript language server
     lspconfig.jdtls.setup({
       capabilities = capabilities,
     })
+    -- setting up the nix language server
+    lspconfig.rnix.setup({
+      capabilities = capabilities,
+    })
+    -- setting up the matlab language server
+    lspconfig.matlab_ls.setup({
+      capabilities = capabilities;
+    })
+    -- setting up the rust language server
+    lspconfig.rust_analyzer.setup({
+      capabilities = capabilities;
+    })
+    -- setting up the arduino language server
+    lspconfig.arduino_language_server.setup({
+      capabilities = capabilities;
+    })
+    -- setting up the css language server
+    lspconfig.cssls.setup({
+      capabilities = capabilities;
+    })
+    -- setting up the nix language server
+    lspconfig.rnix.setup({
+      capabilities = capabilities;
+    })
+
 
 
     -- keybinds

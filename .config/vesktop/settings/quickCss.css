@@ -1,0 +1,8 @@
+/* hides the shop / store and the nitro tab */
+li[role=listitem]:has(a[href="/store"]),
+li[role=listitem]:has(a[href="/shop"]),
+/* hides dumb discover button */
+ul[data-list-id="guildsnav"] > div[class^="footer"]
+{
+    display: none;
+}

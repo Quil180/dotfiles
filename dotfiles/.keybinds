@@ -17,7 +17,7 @@ alias looking-glass-client='env -u WAYLAND_DISPLAY looking-glass-client'
 alias minecraft-server='ssh ubuntu@129.213.123.195 -i ~/.ssh/ssh-key-2024-04-06.key'
 alias hybrid='supergfxctl -m Hybrid && asusctl bios -O true && asusctl profile -P Performance && loginctl terminate-user $USER'
 alias integrated='supergfxctl -m Integrated && asusctl bios -O false && asusctl profile -P Quiet && loginctl terminate-user $USER'
-alias vfio='supergfxctl -m Vfio && asusctl bios -O false && asusctl profile -P Quiet && loginctl terminate-user $USER'
+alias vfio='supergfxctl -m Vfio'
 alias gpu='supergfxctl -g'
 alias comfyui='cd ~/Documents/ComfyUI-Installer && ./launch.sh --lowvram --use-split-cross-attention && cd'
 
@@ -99,6 +99,20 @@ function upd () {
 	fi
 }
 
+# compile and run asembly file alias.
+function runa () {
+  temp=""
+  for arg in "$@"
+  do
+    temp+="$arg "
+  done
+  nasm -felf64 $temp -o a.o
+  ld a.o -o a
+  ./a
+  rm a.o
+  rm a
+}
+
 # debug c files
 function debugc () {
   temp=""
@@ -109,6 +123,7 @@ function debugc () {
   gcc $temp -g -O0
   valgrind --track-origins=yes --leak-check=full -s --show-leak-kinds=all ./a.out
   rm a.out
+  rm vgcore.*
 }
 
 # compile and run C file alias.
@@ -146,7 +161,7 @@ function runj () {
 }
 # pushing a git repository
 function push () {
-  git add .
-  git commit .
+  git add -u
+  git commit -u
   git push origin HEAD:$1
 }

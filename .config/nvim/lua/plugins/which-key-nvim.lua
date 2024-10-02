@@ -26,6 +26,8 @@ return {
     { "<leader>m_", hidden = true },
     { "<leader>w", group = "[W]indow" },
     { "<leader>w_", hidden = true },
+    { "<leader>t", group = "[T]erminal" },
+    { "<leader>t_", hidden = true },
   })
   end
 }
