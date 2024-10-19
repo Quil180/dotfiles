@@ -120,7 +120,7 @@ function debugc () {
   do
     temp+="$arg "
   done
-  gcc $temp -g -O0
+  gcc $temp -g -O0 -lm
   valgrind --track-origins=yes --leak-check=full -s --show-leak-kinds=all ./a.out
   rm a.out
   rm vgcore.*
@@ -133,7 +133,7 @@ function runc () {
   do
     temp+="$arg "
   done
-  gcc $temp
+  gcc $temp -lm
   ./a.out
   rm a.out
 }
