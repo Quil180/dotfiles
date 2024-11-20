@@ -549,7 +549,8 @@
         },
         "USRBG": {
             "enabled": true,
-            "voiceBackground": true
+            "voiceBackground": true,
+            "nitroFirst": true
         },
         "ValidReply": {
             "enabled": false
@@ -661,6 +662,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1732071783670
+        "settingsSyncVersion": 1732086655974
     }
 }
