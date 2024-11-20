@@ -143,9 +143,9 @@ function runcpp () {
   temp=""
   for arg in "$@";
   do
-    temp+="$arg.cpp ";
+    temp+="$arg ";
   done
-  g++ $temp -o $1 -g
+  g++ $temp -g
   ./$1
   rm $1
 }
