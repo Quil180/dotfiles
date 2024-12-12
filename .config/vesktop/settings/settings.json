@@ -536,7 +536,8 @@
             "enabled": false
         },
         "UnlockedAvatarZoom": {
-            "enabled": true
+            "enabled": true,
+            "zoomMultiplier": 4
         },
         "UnsuppressEmbeds": {
             "enabled": false
@@ -662,6 +663,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1732086655974
+        "settingsSyncVersion": 1733971564038
     }
 }
