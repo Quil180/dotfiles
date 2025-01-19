@@ -49,8 +49,11 @@ return {
     lspconfig.rnix.setup({
       capabilities = capabilities;
     })
-    -- setting up the LaTeX language server
+    -- setting up the LaTeX language servers
     lspconfig.ltex.setup({
+      capabilities = capabilities;
+    })
+    lspconfig.pylsp.setup({
       capabilities = capabilities;
     })
 

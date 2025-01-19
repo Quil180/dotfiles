@@ -1,6 +1,6 @@
 {
     "minimizeToTray": "on",
-    "discordBranch": "canary",
+    "discordBranch": "stable",
     "arRPC": "on",
     "splashColor": "rgb(220, 221, 222)",
     "splashBackground": "oklab(0.321044 -0.000249296 -0.00927344)",
