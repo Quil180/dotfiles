@@ -28,6 +28,7 @@ case $1 in
             exit
         fi
         wal -t -i ~/Pictures/wallpaper/$selected
+        ~/.config/waybar/waybar.sh
         sleep 1
         notify-send "Colors and Wallpaper updated" "with image $selected"
     ;;
@@ -35,6 +36,7 @@ case $1 in
     # Randomly select wallpaper 
     *)
         wal -t -i ~/Pictures/wallpaper/
+        ~/.config/waybar/waybar.sh
         sleep 1
         notify-send "Colors and Wallpaper updated " "with random image"
     ;;
