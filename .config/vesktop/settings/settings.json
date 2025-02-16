@@ -195,7 +195,8 @@
             "enabled": true
         },
         "FavoriteGifSearch": {
-            "enabled": false
+            "enabled": true,
+            "searchOption": "hostandpath"
         },
         "FixCodeblockGap": {
             "enabled": false
@@ -219,9 +220,6 @@
         "GreetStickerPicker": {
             "enabled": false
         },
-        "HideAttachments": {
-            "enabled": false
-        },
         "iLoveSpam": {
             "enabled": false
         },
@@ -234,7 +232,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 280,
-            "zoom": 1,
+            "zoom": 1.9,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -395,8 +393,12 @@
         },
         "PinDMs": {
             "enabled": true,
-            "dmSectioncollapsed": false,
-            "pinOrder": 0
+            "pinOrder": 0,
+            "dmSectionCollapsed": false,
+            "canCollapseDmSection": false,
+            "userBasedCategoryList": {
+                "239553056818200576": []
+            }
         },
         "PlainFolderIcon": {
             "enabled": false
@@ -654,6 +656,15 @@
         },
         "FullUserInChatbox": {
             "enabled": false
+        },
+        "IrcColors": {
+            "enabled": false
+        },
+        "BadgeAPI": {
+            "enabled": true
+        },
+        "HideMedia": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -666,6 +677,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1737051285375
+        "settingsSyncVersion": 1739509888005
     }
 }

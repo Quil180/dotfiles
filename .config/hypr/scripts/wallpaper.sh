@@ -27,61 +27,17 @@ case $1 in
             echo "No wallpaper selected"
             exit
         fi
-        wal -q -i ~/Pictures/wallpaper/$selected
+        wal -t -i ~/Pictures/wallpaper/$selected
+        sleep 1
+        notify-send "Colors and Wallpaper updated" "with image $selected"
     ;;
 
     # Randomly select wallpaper 
     *)
-        wal -q -i ~/Pictures/wallpaper/
+        wal -t -i ~/Pictures/wallpaper/
+        sleep 1
+        notify-send "Colors and Wallpaper updated " "with random image"
     ;;
 
 esac
-
-# ----------------------------------------------------- 
-# Load current pywal color scheme
-# ----------------------------------------------------- 
-source "$HOME/.cache/wal/colors.sh"
-echo "Wallpaper: $wallpaper"
-
-# ----------------------------------------------------- 
-# Copy selected wallpaper into .cache folder
-# ----------------------------------------------------- 
-cp $wallpaper ~/.cache/current_wallpaper.jpg
-
-# ----------------------------------------------------- 
-# get wallpaper iamge name
-# ----------------------------------------------------- 
-newwall=$(echo $wallpaper | sed "s|$HOME/Picture/wallpaper/||g")
-
-# ----------------------------------------------------- 
-# Set the new wallpaper
-# -----------------------------------------------------
-transition_type="wipe"
-# transition_type="outer"
-# transition_type="random"
-
-swww img $wallpaper \
-    --transition-bezier .43,1.19,1,.4 \
-    --transition-fps=60 \
-    --transition-type=$transition_type \
-    --transition-duration=0.7
-
-~/dotfiles/chrometheme.sh
-
-# ----------------------------------------------------- 
-# Reload waybar with new colors
-# -----------------------------------------------------
-~/.config/waybar/waybar.sh
-
-# ----------------------------------------------------- 
-# Updating github with new background
-# -----------------------------------------------------
-
-
-# ----------------------------------------------------- 
-# Send notification
-# ----------------------------------------------------- 
-sleep 1
-notify-send "Colors and Wallpaper updated" "with image $newwall"
-
 echo "DONE!"
